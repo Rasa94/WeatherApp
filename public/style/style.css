@@ -13,7 +13,7 @@ body, html {
 
 #main {
     height: 75%;
-    width: 25%;
+    width: 600px;
     margin: 5% auto;
     background-color: lightgray;
     opacity: 0.3;
@@ -45,8 +45,16 @@ main {
     justify-content: space-around;
 }
 
-.futureEl {
+.futureDate {
+    display: flex;
     margin-top: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.futureEl {
+    display: flex;
+
 }
 
 img {
