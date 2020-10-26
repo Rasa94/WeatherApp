@@ -11,13 +11,13 @@ body, html {
 
 }
 
-#main {
-    height: 75%;
+#mainWindow {
+    height: 90%;
     width: 600px;
-    margin: 5% auto;
+    margin: 20px auto;
     background-color: lightgray;
     opacity: 0.3;
-
+    overflow: hidden;
 }
 
 #searchInput {
@@ -27,6 +27,8 @@ body, html {
     font-size: 2rem;
     
 }
+
+    /* Main forecast */
 
 main {
     margin-left: 10px;
@@ -40,7 +42,10 @@ main {
     font-size: 2rem;
 }
 
-#future {
+
+    /* 4 day forecast */
+
+#futureForecastGroup {
     display: flex;
     justify-content: space-around;
 }
@@ -71,17 +76,27 @@ img {
     width: 400px;
 }
 
+    /* Mobile */
+
 @media only screen and (max-width: 420px) {
-    #main {
+    #mainWindow {
         width: 100%;
         height: 100%;
         margin: 0;
-        
+    }
+
+    #futureForecastGroup {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    #futureForecastGroup div {
+        margin: 0;
     }
 
     .futureEl {
         margin: 0px;
-        border: black 1px solid;
         padding: 0;
     }
 
