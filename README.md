@@ -1,4 +1,4 @@
-# WeatherApp (work in progress)
+# WeatherApp 
 
 (JavaScript, network requests(fetch)).
 
